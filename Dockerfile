@@ -1,0 +1,1 @@
+FROM maczikasz/progteach-agent:latest
