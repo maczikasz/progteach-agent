@@ -1,0 +1,14 @@
+{
+  "name": "progteach-agent",
+  "env": {
+    "USER": {
+      "description": "Provide your username, the same as on the frontend",
+      "required": true
+    },
+    "HOSTNAME": {
+      "description": "Provide an alternative backend url (Change only if you know what you are doing)",
+      "required": false,
+      "default": "progteach-backend.herokuapp.com"
+    }
+  }
+}
