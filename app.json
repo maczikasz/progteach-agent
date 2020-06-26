@@ -8,7 +8,7 @@
     "HOSTNAME": {
       "description": "Provide an alternative backend url (Change only if you know what you are doing)",
       "required": false,
-      "default": "progteach-backend.herokuapp.com"
+      "value": "progteach-backend.herokuapp.com"
     }
   }
 }
