@@ -1,5 +1,5 @@
 {
   "name": "Progteach agent",
   "description": "The agent server for the progteach backend app",
-  "repository": "https://github.com/maczikasz/progteach-agent",
+  "repository": "https://github.com/maczikasz/progteach-agent"
 }
