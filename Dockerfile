@@ -1,4 +1,5 @@
-FROM maczikasz/progteach-agent:latest
+# FROM maczikasz/progteach-agent:latest
+FROM ubuntu
 
 RUN apt-get install curl
 
