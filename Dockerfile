@@ -1,6 +1,3 @@
-# FROM maczikasz/progteach-agent:latest
-FROM ubuntu
+FROM maczikasz/progteach-agent:latest
 
-RUN apt-get update && apt-get install -y curl
-
-ENTRYPOINT [ "curl","https://progteach-backend.herokuapp.com/actuator/health" ]
+ENTRYPOINT [ "wget","https://progteach-backend.herokuapp.com/actuator/health", "-O -" ]
