@@ -1,4 +1,8 @@
-FROM maczikasz/progteach-agent:latest
+FROM maczikasz/progteach-agent:latest as agent
 
-# RUN apk add curl
-# ENTRYPOINT [ "curl","https://progteach-backend.herokuapp.com/connect/szava/localhost-go-agent", "-i" ]
+FROM maczikasz/progteach:jdk8-singlefile-v0.1
+COPY --from=agent /agent /usr/local/sbin/agent
+RUN chmod +x /usr/local/sbin/agent
+ENTRYPOINT agent --userId $USER --hostname $HOSTNAME --http $PORT
+
+

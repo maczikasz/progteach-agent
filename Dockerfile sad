@@ -1,0 +1,5 @@
+FROM docker:19.03-dind
+
+RUN apk update && apk add --no-cache supervisor openssh nginx
+COPY supervisord.conf /etc/supervisord.conf
+ENTRYPOINT ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
